@@ -1,0 +1,9 @@
+.main {
+  // display: flex;
+  // flex-wrap: nowrap;
+  // justify-content: space-between;
+  // min-width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: var(--bg-primary);
+}

@@ -1,0 +1,58 @@
+<aside class="mainMenu" [ngClass]="lang ? 'ar' : 'en rev'">
+  <p class="mainMenu__header" [ngClass]="lang ? 'ar' : 'en rev'">
+    {{ main[0] }}
+  </p>
+
+  <div
+    class="mainMenu__list"
+    *ngFor="let item of mainOptions; let index = index"
+  >
+    <div
+      class="mainMenu__list--btn"
+      role="button"
+      [ngClass]="{ active: display[index], enBorder: !lang }"
+      (click)="accordionToggle(index)"
+    >
+      <picture>
+        <img src="../../../assets/icons/home.svg" alt="" />
+      </picture>
+
+      <p>{{ item }}</p>
+
+      <img class="arrow" src="../../../assets/icons/Vector.svg" alt="arrow" />
+    </div>
+    <ul
+      class="mainMenu__list--child"
+      [ngClass]="{ hide: !display[index], en: !lang, rev: !lang }"
+    >
+      <img src="../../../assets/icons/Group 4531.svg" alt="" />
+      <div>
+        <div *ngFor="let option of secondaryOption; let index = index">
+          <li>{{ option }}</li>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+  <p class="mainMenu__header">{{ main[1] }}</p>
+
+  <div class="mainMenu__list">
+    <div class="mainMenu__list--btn">
+      <img
+        class="bg-yellow"
+        src="../../../assets/icons/info-circle.svg"
+        alt="{{ accountOptions[0] }}"
+      />
+      <p>{{ accountOptions[0] }}</p>
+    </div>
+
+    <div class="mainMenu__list--btn">
+      <img
+        class="bg-yellow"
+        src="../../../assets/icons/setting-2.svg"
+        alt="{{ accountOptions[1] }}"
+      />
+      <p>{{ accountOptions[1] }}</p>
+    </div>
+  </div>
+</aside>

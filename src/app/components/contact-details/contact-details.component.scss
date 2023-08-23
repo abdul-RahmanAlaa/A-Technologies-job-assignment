@@ -1,0 +1,193 @@
+.contactDetails {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+
+  &__info,
+  &__statistics {
+    background-color: var(--bg-primary);
+    border: 1px var(--bg-secondary) solid;
+    border-radius: 0.47rem;
+    padding: 1.67rem 1.28rem 1.28rem 0.75rem;
+    margin: 0.66rem;
+
+    &--header {
+      display: flex;
+      justify-content: space-between;
+
+      &__name {
+        color: var(--text2);
+      }
+      &__date {
+        color: var(--text3);
+      }
+    }
+  }
+
+  &__info {
+    &--body {
+      display: flex;
+
+      &__data--section > header {
+        margin-top: 1.49rem;
+        display: flex;
+        align-items: center;
+
+        & > svg {
+          margin-inline-end: 0.23rem;
+        }
+
+        & > p {
+          color: var(--text3);
+        }
+      }
+
+      & h3 {
+        margin-top: 0.25rem;
+      }
+
+      &__chart {
+        position: relative;
+        margin-top: 1.54rem;
+        margin-inline-start: 3rem;
+
+        background-image: url("../../../assets/images/Ellipse\ 1078.svg");
+        background-repeat: no-repeat;
+        width: 10.25rem;
+        height: 10.25rem;
+
+        &::before {
+          content: "";
+          background-image: url("../../../assets/images/Ellipse\ 1075.svg");
+          background-repeat: no-repeat;
+
+          position: absolute;
+          width: 25rem;
+          height: 25rem;
+
+          top: 1.25rem;
+          left: 1rem;
+        }
+
+        &::after {
+          content: "";
+          background-image: url("../../../assets/images/Ellipse\ 1074.svg");
+          background-repeat: no-repeat;
+
+          position: absolute;
+          width: 25rem;
+          height: 25rem;
+
+          top: 2.5rem;
+          left: 2.5rem;
+        }
+
+        & > .outLineDot {
+          position: absolute;
+          height: 0.56rem;
+          width: 0.56rem;
+
+          top: 2.5rem;
+          left: 9rem;
+        }
+
+        & > .midLineDot {
+          position: absolute;
+          height: 0.56rem;
+          width: 0.56rem;
+
+          top: 8.4rem;
+          left: 4.8rem;
+        }
+
+        & > .innerLineDot {
+          position: absolute;
+          height: 0.56rem;
+          width: 0.56rem;
+
+          top: 4rem;
+          left: 2.5rem;
+        }
+
+        & > .employee {
+          position: absolute;
+          top: 3.5rem;
+          left: 3.5rem;
+        }
+      }
+    }
+  }
+
+  &__statistics {
+    &--body {
+      // margin-bottom: 1rem;
+      max-width: 18rem;
+    }
+
+    &--footer {
+      display: flex;
+      justify-content: space-around;
+
+      &__data1,
+      &__data2 {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 2rem;
+          top: 0.25rem;
+          right: -1rem;
+
+          --radius: 25%;
+          border-start-start-radius: var(--radius);
+          border-end-end-radius: var(--radius);
+          border-start-end-radius: var(--radius);
+          border-end-start-radius: var(--radius);
+        }
+      }
+
+      &__data1::before {
+        border: 2.5px solid var(--accent);
+      }
+
+      &__data2::before {
+        border: 2.5px solid var(--yellow);
+      }
+    }
+  }
+
+  &__others {
+    margin: 0.66rem;
+    color: var(--bg-secondary);
+
+    &--card {
+      width: 12.2rem;
+      margin: 1rem;
+      padding: 0.9rem;
+      border-radius: 1rem;
+
+      &__body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 0.25rem;
+        & > img {
+          margin-inline-start: 1rem;
+        }
+
+        & > .decoration {
+          position: absolute;
+          top: -2.5rem;
+          left: -1rem;
+        }
+        & > .decoration.rev {
+          position: absolute;
+          transform: scaleX(-1);
+          top: -2.5rem;
+          left: 0.9rem;
+        }
+      }
+    }
+  }
+}

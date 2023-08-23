@@ -1,0 +1,254 @@
+<section class="contactDetails" [ngClass]="lang ? 'ar' : 'en'">
+  <section class="contactDetails__info">
+    <header class="contactDetails__info--header">
+      <h3 class="contactDetails__info--header__name">
+        {{ firstChartData[0] }}
+      </h3>
+
+      <h4 class="contactDetails__info--header__date">
+        {{ firstChartData[5] }}
+      </h4>
+    </header>
+
+    <div class="contactDetails__info--body">
+      <div class="contactDetails__info--body__data">
+        <div class="contactDetails__info--body__data--section">
+          <header>
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                id="Ellipse 1078"
+                cx="3.68056"
+                cy="3.70094"
+                rx="3.68056"
+                ry="3.70094"
+                transform="matrix(-1 0 0 1 8 0.212574)"
+                class="green"
+              />
+            </svg>
+            <p>
+              {{ firstChartData[1] }}
+            </p>
+          </header>
+          <h3>
+            {{ fakeNumbers[0] }}
+          </h3>
+        </div>
+        <div class="contactDetails__info--body__data--section">
+          <header>
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                id="Ellipse 1078"
+                cx="3.68056"
+                cy="3.70094"
+                rx="3.68056"
+                ry="3.70094"
+                transform="matrix(-1 0 0 1 8 0.212574)"
+                class="violet"
+              />
+            </svg>
+            <p>
+              {{ firstChartData[2] }}
+            </p>
+          </header>
+          <h3>
+            {{ fakeNumbers[1] }}
+          </h3>
+        </div>
+        <div class="contactDetails__info--body__data--section">
+          <header>
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                id="Ellipse 1078"
+                cx="3.68056"
+                cy="3.70094"
+                rx="3.68056"
+                ry="3.70094"
+                transform="matrix(-1 0 0 1 8 0.212574)"
+                class="orange"
+              />
+            </svg>
+            <p>
+              {{ firstChartData[3] }}
+            </p>
+          </header>
+          <h3>
+            {{ fakeNumbers[2] }}
+          </h3>
+        </div>
+      </div>
+
+      <div class="contactDetails__info--body__chart">
+        <svg
+          class="outLineDot"
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            id="Ellipse 1078"
+            cx="3.68056"
+            cy="3.70094"
+            rx="3.68056"
+            ry="3.70094"
+            transform="matrix(-1 0 0 1 8 0.212574)"
+            class="green"
+          />
+        </svg>
+
+        <svg
+          class="midLineDot"
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            id="Ellipse 1078"
+            cx="3.68056"
+            cy="3.70094"
+            rx="3.68056"
+            ry="3.70094"
+            transform="matrix(-1 0 0 1 8 0.212574)"
+            class="violet"
+          />
+        </svg>
+
+        <svg
+          class="innerLineDot"
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            id="Ellipse 1078"
+            cx="3.68056"
+            cy="3.70094"
+            rx="3.68056"
+            ry="3.70094"
+            transform="matrix(-1 0 0 1 8 0.212574)"
+            class="orange"
+          />
+        </svg>
+
+        <img class="employee" [src]="img" alt="employee" />
+      </div>
+    </div>
+  </section>
+
+  <section class="contactDetails__statistics">
+    <header class="contactDetails__info--header">
+      <h3>
+        {{ secondChartData[0] }}
+      </h3>
+    </header>
+
+    <section class="contactDetails__statistics--body">
+      <app-contact-chart />
+    </section>
+
+    <footer class="contactDetails__statistics--footer">
+      <div class="contactDetails__statistics--footer__data1">
+        <h3>
+          {{ fakeNumbers[4] }}
+        </h3>
+        <p>
+          {{ secondChartData[2] }}
+        </p>
+      </div>
+      <div class="contactDetails__statistics--footer__data2">
+        <h3>
+          {{ fakeNumbers[5] }}
+        </h3>
+        <p>
+          {{ secondChartData[3] }}
+        </p>
+      </div>
+    </footer>
+  </section>
+
+  <section class="contactDetails__others">
+    <div class="contactDetails__others--card bgOrange">
+      <div class="contactDetails__others--card__header">
+        <h3>
+          {{ firstChartData[6] }}
+        </h3>
+      </div>
+
+      <div class="contactDetails__others--card__body">
+        <h3>
+          {{ fakeNumbers[6] }}
+        </h3>
+        <img src="../../../assets/icons/timer-start.svg" alt="" />
+        <img
+          class="decoration"
+          [ngClass]="lang ? '' : 'rev'"
+          src="../../../assets/images/Mask Group.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="contactDetails__others--card bgViolet">
+      <div class="contactDetails__others--card__header">
+        <h3>
+          {{ firstChartData[6] }}
+        </h3>
+      </div>
+
+      <div class="contactDetails__others--card__body">
+        <h3>
+          {{ fakeNumbers[7] }}
+        </h3>
+        <img src="../../../assets/icons/calendar-2.svg" alt="" />
+        <img
+          class="decoration"
+          [ngClass]="lang ? '' : 'rev'"
+          src="../../../assets/images/Mask Group (2).svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="contactDetails__others--card bgGreen">
+      <div class="contactDetails__others--card__header">
+        <h3>
+          {{ firstChartData[6] }}
+        </h3>
+      </div>
+
+      <div class="contactDetails__others--card__body">
+        <h3>
+          {{ fakeNumbers[8] }}
+        </h3>
+        <img src="../../../assets/icons/tick-circle.svg" alt="" />
+        <img
+          class="decoration"
+          [ngClass]="lang ? '' : 'rev'"
+          src="../../../assets/images/Mask Group (3).svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
+</section>

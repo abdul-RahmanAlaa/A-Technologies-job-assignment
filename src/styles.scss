@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+// Globals
+
+:root {
+  // colors
+  --bg-primary: #ffffff;
+  --bg-secondary: #e5e5ef;
+  --accent: #0771de;
+  --text1: #000000;
+  --text2: #23262f;
+  --text3: #99a1b7;
+  --border: #ffffff;
+  --yellow: #feee00;
+  --green: #3dd598;
+  --violet: #7661e2;
+  --orange: #f8c07f;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+// the end of Globals
+
+// the UTILITY classes
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ar {
+  direction: rtl;
+}
+
+.en {
+  direction: ltr !important;
+}
+
+.rev {
+  flex-direction: row-reverse;
+}
+
+.bgGreen {
+  background: #3dd598;
+}
+
+.bgViolet {
+  background: #7661e2;
+}
+
+.bgOrange {
+  background: #ff9a3e;
+}
+
+.green {
+  color: var(--green);
+  fill: var(--green);
+}
+
+.violet {
+  color: var(--violet);
+  fill: var(--violet);
+}
+
+.orange {
+  color: var(--orange);
+  fill: var(--orange);
+}
+
+// end of the UTILITY classes

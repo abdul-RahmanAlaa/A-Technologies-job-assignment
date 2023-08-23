@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  position: relative;
+
+  &__logo {
+    margin: 1.12rem 3.41rem 0 3.41rem;
+  }
+
+  &__langBtn {
+    position: absolute;
+    top: 2rem;
+    left: 13.5rem;
+
+    &.arDirection {
+      transform: scaleX(-1);
+      left: 71rem !important;
+    }
+  }
+}

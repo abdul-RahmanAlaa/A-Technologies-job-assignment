@@ -1,0 +1,54 @@
+.mainMenu {
+  margin-top: 5.23rem;
+  width: 15.6rem;
+
+  &__header {
+    color: var(--text3);
+    margin: 1.45rem 1.39rem;
+  }
+  &__list {
+    &--btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      p {
+        min-width: 6rem;
+        margin: 0 0.41rem;
+      }
+
+      img {
+        margin: 0.61rem 1.41rem 0.66rem 1.75rem;
+      }
+
+      &.active > picture {
+        border-radius: 50% 0 0 50%;
+        background-color: var(--yellow);
+      }
+      &.active.enBorder > picture {
+        border-radius: 0 50% 50% 0 !important;
+      }
+
+      &.active > .arrow {
+        transition: ease-in-out;
+        transition-duration: 250ms;
+        transform: rotate(180deg);
+      }
+    }
+    &--child {
+      list-style: none;
+      margin: 0.51rem 3.72rem 0 0;
+      display: flex;
+
+      &.hide {
+        display: none;
+      }
+
+      & > div > div > li {
+        cursor: pointer;
+        margin: 0.77rem 0.7rem;
+      }
+    }
+  }
+}
