@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { LangService } from 'src/app/services/lang.service';
 
@@ -7,7 +7,7 @@ import { LangService } from 'src/app/services/lang.service';
   templateUrl: './contact-details.component.html',
   styleUrls: ['./contact-details.component.scss'],
 })
-export class ContactDetailsComponent {
+export class ContactDetailsComponent implements OnInit {
   img: string = '../../../assets/images/Image-79.png';
 
   firstChartDataAr: Array<string> = [
@@ -21,9 +21,9 @@ export class ContactDetailsComponent {
   ];
   firstChartDataEn: Array<string> = [
     'first person',
-    'read number 1',
-    'read number 1',
-    'read number 1',
+    'read num1',
+    'read num1',
+    'read num1',
     'first employee',
     'may 10 - june 10',
     'other reads',

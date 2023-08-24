@@ -1,9 +1,14 @@
-<nav class="navbar" [ngClass]="{ ar: lang }">
+<nav class="navbar" [ngClass]="{ ar: lang, arDirection: lang }">
   <figure>
     <img class="navbar__logo" src="../../../assets/icons/logo.svg" alt="logo" />
     <figcaption class="visually-hidden">the logo of the website</figcaption>
   </figure>
-  <figure class="navbar__langBtn" [ngClass]="{ arDirection: lang }" role="button" (click)="changeLang()">
+  <figure
+    class="navbar__langBtn"
+    [ngClass]="{ arDirection: lang }"
+    role="button"
+    (click)="changeLang()"
+  >
     <img
       [ngClass]="{ arDirection: !lang }"
       src="../../../assets/icons/Group 93.svg"

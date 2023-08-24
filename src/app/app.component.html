@@ -1,19 +1,6 @@
 <app-nav-bar />
-<main class="main" [ngClass]="{ ar: !lang }">
-  <app-aside-menu />
-  <app-main-body />
+<main class="main" [ngClass]="{ ar: lang }">
   <app-main-menu />
+  <app-main-body class="main__body" />
+  <app-aside-menu />
 </main>
-
-<!-- <app-nav-bar />
-<main class="main">
-  <aside>
-    <app-main-menu />
-  </aside>
-  <section>
-    <app-main-body />
-  </section>
-  <aside>
-    <app-aside-menu />
-  </aside>
-</main> -->

@@ -8,47 +8,47 @@ Noto Sans Arabic is a variable font with these axes:
   wght
 
 This means all the styles are contained in a single file:
-  Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth,wght.ttf
+  NotoSansArabic-VariableFont_wdth,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Noto Sans Arabic:
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-Thin.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-ExtraLight.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-Light.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-Regular.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-Medium.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-SemiBold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-Bold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-ExtraBold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_ExtraCondensed-Black.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-Thin.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-ExtraLight.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-Light.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-Regular.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-Medium.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-SemiBold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-Bold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-ExtraBold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_Condensed-Black.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-Thin.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-ExtraLight.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-Light.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-Regular.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-Medium.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-SemiBold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-Bold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-ExtraBold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-Black.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-Thin.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-ExtraLight.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-Light.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-Regular.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-Medium.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-SemiBold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-Bold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-ExtraBold.ttf
-  Noto_Sans_Arabic/static/NotoSansArabic-Black.ttf
+  static/NotoSansArabic_ExtraCondensed-Thin.ttf
+  static/NotoSansArabic_ExtraCondensed-ExtraLight.ttf
+  static/NotoSansArabic_ExtraCondensed-Light.ttf
+  static/NotoSansArabic_ExtraCondensed-Regular.ttf
+  static/NotoSansArabic_ExtraCondensed-Medium.ttf
+  static/NotoSansArabic_ExtraCondensed-SemiBold.ttf
+  static/NotoSansArabic_ExtraCondensed-Bold.ttf
+  static/NotoSansArabic_ExtraCondensed-ExtraBold.ttf
+  static/NotoSansArabic_ExtraCondensed-Black.ttf
+  static/NotoSansArabic_Condensed-Thin.ttf
+  static/NotoSansArabic_Condensed-ExtraLight.ttf
+  static/NotoSansArabic_Condensed-Light.ttf
+  static/NotoSansArabic_Condensed-Regular.ttf
+  static/NotoSansArabic_Condensed-Medium.ttf
+  static/NotoSansArabic_Condensed-SemiBold.ttf
+  static/NotoSansArabic_Condensed-Bold.ttf
+  static/NotoSansArabic_Condensed-ExtraBold.ttf
+  static/NotoSansArabic_Condensed-Black.ttf
+  static/NotoSansArabic_SemiCondensed-Thin.ttf
+  static/NotoSansArabic_SemiCondensed-ExtraLight.ttf
+  static/NotoSansArabic_SemiCondensed-Light.ttf
+  static/NotoSansArabic_SemiCondensed-Regular.ttf
+  static/NotoSansArabic_SemiCondensed-Medium.ttf
+  static/NotoSansArabic_SemiCondensed-SemiBold.ttf
+  static/NotoSansArabic_SemiCondensed-Bold.ttf
+  static/NotoSansArabic_SemiCondensed-ExtraBold.ttf
+  static/NotoSansArabic_SemiCondensed-Black.ttf
+  static/NotoSansArabic-Thin.ttf
+  static/NotoSansArabic-ExtraLight.ttf
+  static/NotoSansArabic-Light.ttf
+  static/NotoSansArabic-Regular.ttf
+  static/NotoSansArabic-Medium.ttf
+  static/NotoSansArabic-SemiBold.ttf
+  static/NotoSansArabic-Bold.ttf
+  static/NotoSansArabic-ExtraBold.ttf
+  static/NotoSansArabic-Black.ttf
 
 Get started
 -----------

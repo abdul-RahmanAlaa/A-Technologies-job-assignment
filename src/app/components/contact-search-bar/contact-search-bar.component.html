@@ -1,1 +1,20 @@
-<p>contact-search-bar works!</p>
+<section class="searchBar" [ngClass]="lang ? 'ar' : 'en'">
+  <div class="searchBar__inputSection">
+    <input type="search" />
+    <img
+      class="searchBar__inputSection--logo"
+      [ngClass]="{ searchDirection: !lang }"
+      src="../../../assets/icons/search-normal.svg"
+      alt=""
+    />
+    <a role="button">
+      <img src="../../../assets/icons/setting-4.svg" alt="" />
+    </a>
+    <a role="button">
+      <img src="../../../assets/icons/arrow-3.svg" alt="" />
+    </a>
+  </div>
+  <div class="searchBar__aside" role="button">
+    {{ button }}
+  </div>
+</section>

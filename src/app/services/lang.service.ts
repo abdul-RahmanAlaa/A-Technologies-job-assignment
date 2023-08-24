@@ -1,11 +1,9 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
-import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class LangService {
-  // private langSubject : Subject<boolean> = new;
   @Output() langToggle = new EventEmitter<boolean>();
 
   lang: boolean = true;

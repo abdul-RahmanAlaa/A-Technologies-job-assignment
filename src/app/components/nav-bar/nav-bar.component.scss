@@ -3,17 +3,24 @@
   position: relative;
 
   &__logo {
-    margin: 1.12rem 3.41rem 0 3.41rem;
+    margin-inline-start: 3.41rem;
+    margin-top: 1.212rem;
   }
 
   &__langBtn {
-    position: absolute;
-    top: 2rem;
-    left: 13.5rem;
+    margin-top: 3rem;
+    margin-inline-start: 1rem;
+
+    & img {
+      cursor: pointer;
+
+      &:active {
+        background-color: var(--accent);
+      }
+    }
 
     &.arDirection {
       transform: scaleX(-1);
-      left: 71rem !important;
     }
   }
 }

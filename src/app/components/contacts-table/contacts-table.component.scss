@@ -1,0 +1,272 @@
+.container {
+  margin-inline: 0.7rem;
+
+  & .table {
+    margin-top: 0.75rem;
+    background-color: var(--bg-primary);
+    border-collapse: collapse;
+    color: var(--text2);
+
+    width: 100%;
+
+    &__header {
+      padding: 1rem;
+      border: 0.44rem solid var(--bg-primary);
+      font-size: var(--fs-normal);
+
+      &--row {
+        &__cell {
+          cursor: context-menu;
+          background-color: var(--bg-secondary);
+          padding: 0.5rem;
+
+          & > .sort {
+            cursor: pointer;
+            display: inline;
+
+            visibility: hidden;
+          }
+          &:hover > .sort {
+            visibility: visible;
+          }
+
+          &.settings {
+            position: relative;
+            cursor: pointer;
+            width: 3rem;
+
+            & > svg {
+              border-radius: 5px;
+
+              & > g > g > path {
+                fill: var(--text1);
+              }
+            }
+
+            & > .active {
+              background-color: var(--accent);
+
+              & > g > g > path {
+                fill: var(--bg-primary);
+              }
+            }
+
+            & > div {
+              display: none;
+              // display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              background-color: var(--bg-primary);
+
+              position: absolute;
+              top: 1.125rem;
+              left: 2.5rem;
+
+              &.optionsEn {
+                left: -13.5rem;
+              }
+
+              &.visible {
+                display: flex;
+              }
+
+              & > header {
+                padding: 0.5rem 0.5rem 0.5rem 0;
+              }
+
+              & > ul {
+                list-style: none;
+                width: 100%;
+
+                & > li {
+                  display: flex;
+                  border-bottom: 1px solid var(--bg-secondary);
+                  border-radius: 3px;
+
+                  & > img {
+                    margin-inline-start: 0.5rem;
+                  }
+                  & > label {
+                    text-align: start;
+                    white-space: nowrap;
+                    width: 5rem;
+                    margin-inline: 0.7rem 5.5rem;
+                    margin-block: 0.6rem;
+                  }
+
+                  & > input {
+                    margin-inline: 0 1rem;
+                  }
+                  & > input:checked ~ label {
+                    //well back to hide the col litter
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__body {
+      &--row {
+        &__cell {
+          border-block: 1px solid var(--border2);
+          padding: 0.94rem 1.44rem 0.75rem 1.44rem;
+          font-size: var(--fs-normal);
+
+          cursor: context-menu;
+
+          max-width: 6rem;
+
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          &:first-child {
+            color: var(--border1);
+          }
+
+          &.dragHandle {
+            cursor: pointer;
+            padding-inline-start: 1rem;
+          }
+
+          &.list {
+            padding: 0;
+            width: 25%;
+          }
+
+          &.name {
+            width: 15%;
+          }
+
+          &.email {
+            width: 20%;
+          }
+
+          &.file {
+            padding: 0;
+
+            & > .file__image {
+              width: 1.75rem;
+              margin: 0 !important;
+            }
+
+            & > div > .file__icon {
+              display: inline-flex;
+              margin-inline-start: 1rem;
+              cursor: pointer;
+              display: inline;
+
+              visibility: hidden;
+            }
+            &:hover > div > .file__icon {
+              visibility: visible;
+            }
+          }
+
+          &--weekList {
+            list-style: none;
+            display: flex;
+
+            &__day {
+              & > input {
+                display: none;
+              }
+              & > label {
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-inline-start: 0.25rem;
+                text-align: center;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+
+              & > input:checked ~ label {
+                background-color: var(--accent);
+                color: var(--bg-primary);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.table__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 1rem;
+  padding-block: 0.81rem 0.76rem;
+
+  &--start {
+    font-size: var(--fs-normal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > select {
+      height: 1.5rem;
+      margin-inline: 0.5rem;
+      font-size: var(--fs-normal);
+      outline: none;
+    }
+  }
+
+  &--mid {
+    margin-inline: 10rem;
+  }
+
+  &--end {
+    display: flex;
+    font-size: var(--fs-big);
+    color: var(--border1);
+    align-items: center;
+
+    & > img {
+      width: 0.5rem;
+      margin-inline: 0.79rem;
+
+      &.revers {
+        transform: scaleX(-1);
+      }
+    }
+
+    &__pagination {
+      & > input {
+        display: none;
+      }
+
+      & > label {
+        display: inline-block;
+        width: 1.5rem;
+        margin-inline-start: 0.25rem;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      & > input:checked ~ label {
+        background-color: var(--accent);
+        color: var(--bg-primary);
+      }
+    }
+  }
+}
+
+.cdk-drag-preview {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.5em;
+  text-align: center;
+  // opacity: 0.8;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}

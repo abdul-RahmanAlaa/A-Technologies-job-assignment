@@ -1,5 +1,10 @@
 // Globals
 
+@font-face {
+  font-family: mainFont;
+  src: url("./assets/fonts/Noto_Sans_Arabic/static/NotoSansArabic-Regular.ttf");
+}
+
 :root {
   // colors
   --bg-primary: #ffffff;
@@ -9,16 +14,26 @@
   --text2: #23262f;
   --text3: #99a1b7;
   --border: #ffffff;
+  --border1: rgba(146, 161, 173, 0.9);
+  --border2: rgba(146, 161, 173, 0.4);
   --yellow: #feee00;
   --green: #3dd598;
   --violet: #7661e2;
   --orange: #f8c07f;
+
+  // fonts
+
+  --fs-header: 0.84375rem;
+  --fs-big: 0.75rem;
+  --fs-normal: 0.6125rem;
+  --fs-small: 0.59638rem;
 }
 
 html {
   box-sizing: border-box;
-  font-size: 100%;
-  font-family: "Noto Sans Arabic", sans-serif;
+  font-family: mainFont;
+  font-weight: 400;
+  font-style: normal;
 }
 
 *,
@@ -27,6 +42,9 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  font-family: mainFont;
+  font-weight: 600;
+  font-style: normal;
 }
 
 img,

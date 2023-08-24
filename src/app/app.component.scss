@@ -1,9 +1,22 @@
 .main {
-  // display: flex;
-  // flex-wrap: nowrap;
-  // justify-content: space-between;
-  // min-width: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: var(--bg-primary);
+  display: flex;
+
+  @media (min-width: 1485px) {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  @media (max-width: 1372px) {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+
+
+  @media (max-width: 1242px) {
+    display: block;
+  }
+
+  &__body {
+    background-color: var(--bg-primary);
+  }
 }

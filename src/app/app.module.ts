@@ -14,6 +14,9 @@ import { ContactDetailsComponent } from './components/contact-details/contact-de
 import { ContactSearchBarComponent } from './components/contact-search-bar/contact-search-bar.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { ContactChartComponent } from './components/contact-chart/contact-chart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,14 @@ import { ContactChartComponent } from './components/contact-chart/contact-chart.
     ContactSearchBarComponent,
     ContactChartComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgApexchartsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgApexchartsModule,
+    BrowserAnimationsModule,
+    DragDropModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
