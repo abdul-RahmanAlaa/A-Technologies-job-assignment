@@ -1,5 +1,7 @@
 .contactDetails {
   display: flex;
+  min-height: 40vh;
+
 
   @media (min-width: 1485px) {
     display: grid;

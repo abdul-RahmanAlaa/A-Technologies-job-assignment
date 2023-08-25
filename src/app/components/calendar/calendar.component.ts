@@ -15,22 +15,22 @@ export class CalendarComponent {
     {
       day: ['السبت', 'Saturday'],
       number: 24,
-      tasks: [true, true, true],
+      tasks: [false, true, false],
     },
     {
       day: ['الأحد ', 'Sunday'],
       number: 25,
-      tasks: [true, true, true],
+      tasks: [false, false, false],
     },
     {
       day: ['الإثنين ', 'Monday'],
       number: 26,
-      tasks: [true, true, true],
+      tasks: [false, false, false],
     },
     {
       day: ['الثلاثاء ', 'Tuesday'],
       number: 27,
-      tasks: [true, true, true],
+      tasks: [true, true, false],
     },
     {
       day: ['الأربعاء ', 'Wednesday'],
@@ -40,12 +40,12 @@ export class CalendarComponent {
     {
       day: ['الخميس ', 'Thursday'],
       number: 29,
-      tasks: [true, true, true],
+      tasks: [false, false, false],
     },
     {
       day: ['الجمعة ', 'Friday'],
       number: 30,
-      tasks: [true, true, true],
+      tasks: [false, false, true],
     },
   ];
 

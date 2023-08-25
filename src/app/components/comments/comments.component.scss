@@ -1,6 +1,8 @@
 .comments {
   overflow-y: scroll;
-  height: 42.8rem;
+  height: calc(100vh - 15rem);
+  // height: 85vh;
+
 
   -ms-overflow-style: none;
   scrollbar-width: none;

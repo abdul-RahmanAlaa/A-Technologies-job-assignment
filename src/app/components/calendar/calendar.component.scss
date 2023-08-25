@@ -1,17 +1,29 @@
 .calendar {
+  margin-block-start: 1.59rem;
+
   &__header {
     display: flex;
     justify-content: space-between;
-    margin: 1.5rem;
+    align-items: center;
 
     & > div {
       display: inherit;
       justify-content: flex-end;
       align-items: center;
 
+      & > h3 {
+        padding: 0;
+        margin: 0;
+      }
+
+      & > a {
+        font-size: var(--fs-small);
+        color: var(--text3);
+        cursor: pointer;
+      }
+
       & > img {
         margin-inline: 0.5rem;
-        margin-top: -1rem;
 
         &.rotate {
           transform: scaleX(-1);
@@ -19,7 +31,6 @@
       }
       & > a {
         border-radius: 0.52rem;
-        margin: -0.5rem 0.5rem 0.5rem 0.5rem;
 
         & > img {
           display: inline;
@@ -33,10 +44,37 @@
   & > div > ul {
     list-style: none;
     display: flex;
+    margin-block: 1.22rem 2.5rem;
+    // margin-inline-start: -0.75rem;
 
     & li {
-      margin: 0 0.25rem;
-      
+      display: inherit;
+      flex-direction: column;
+      align-items: center;
+      margin-inline-start: 0.75rem;
+      cursor: default;
+
+      & > span {
+        font-size: var(--fs-small);
+        color: var(--text3);
+
+        &.number {
+          font-size: var(--fs-big);
+          color: var(--text1);
+        }
+      }
+
+      & > div {
+        display: inherit;
+        flex-direction: row;
+
+        margin-inline-start: -0.25rem;
+
+        & > img {
+          margin-inline-start: 0.25rem;
+          margin-block-start: 0.52rem;
+        }
+      }
     }
   }
 }
